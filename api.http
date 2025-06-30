@@ -1,14 +1,19 @@
 
+
+### consulta por genero
+GET http://localhost:3000/movies/search?genre=Action
+
+
 ### Lista de peliculas
 
 GET http://localhost:3000/movies
 
 
-### consulta por id de pelicula
-GET http://localhost:3000/movies/1749769847016
 
-### consulta por genero
-GET http://localhost:3000/movies/search?genre=Action
+### consulta por id de pelicula
+GET http://localhost:3000/movies/1749769847012
+
+
 
 
 ### Crear una pelicula
