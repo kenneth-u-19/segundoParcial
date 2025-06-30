@@ -1,0 +1,55 @@
+
+### Lista de peliculas
+
+GET http://localhost:3000/movies
+
+
+### consulta por id de pelicula
+GET http://localhost:3000/movies/1749769847016
+
+### consulta por genero
+GET http://localhost:3000/movies/search?genre=Action
+
+
+### Crear una pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Inception II",
+    "decription": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "poster_url": "https://m.media-amazon.com/images/I/71uKM+LdgFL._UF894,1000_QL80_.jpg",
+    "genre": [
+        "Science Fiction",
+        "Thriller"
+    ]
+}
+
+### eliminar una pelicula
+DELETE http://localhost:3000/movies/1749769847012
+
+### Actualziar una pelicula
+PATCH http://localhost:3000/movies/1749769847012
+Content-Type: application/json
+
+{
+    "title": "Inception II",
+    "decription": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+    "year": 2010,
+    "poster_url": "https://example.com/inception-poster.jpg",
+    "genre": [
+        "Science Fiction",
+        "Thriller"
+    ]
+}
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin123"
+}
